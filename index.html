@@ -2,6 +2,8 @@
 	<head>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="plugin/prism/prism.css">
+		
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
@@ -15,12 +17,30 @@
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
+				<section><h2>Slide 3</h2>
+				<pre><code class="language-html" data-trim data-noescape>
+&#60;pre&gt;&#60;code class="language-bash"&gt;$ echo Test &#60;/code&gt;&#60;/pre&gt;
+				</code></pre>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+## Slide 4: Markdown
+
+Selection
+```bash 
+echo "Hello World!"
+```
+					</script>
+				</section>
+
 			</div>
 		</div>
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script>
 			Reveal.initialize({
 				dependencies: [
+					{ src: 'plugin/prism/prism.js' },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 				]
