@@ -19,7 +19,12 @@
 		</div>
 		<script src="js/reveal.js"></script>
 		<script>
-			Reveal.initialize();
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+				]
+			});
 		</script>
 	</body>
 </html>
